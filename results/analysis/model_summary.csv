@@ -1,0 +1,5 @@
+model,condition,n_runs,ast_valid_rate,interface_conformance_mean,interface_conformance_median,violation_count_mean,functional_valid_rate,functional_score_mean,SS_FP,SS_FF,SN_FP,SN_FF
+claude-sonnet-5,baseline,30,1.0000,0.6550,0.6626,6.9333,0.3000,0.5488,1,4,8,17
+claude-sonnet-5,caps,30,1.0000,0.9889,1.0000,0.0667,0.9000,0.9000,27,3,0,0
+deepseek-v4.1-flash,baseline,30,1.0000,0.7224,0.7307,5.8667,0.1667,0.3726,2,4,3,21
+deepseek-v4.1-flash,caps,30,1.0000,0.9944,1.0000,0.0333,1.0000,1.0000,30,0,0,0

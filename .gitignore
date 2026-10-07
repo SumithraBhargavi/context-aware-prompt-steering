@@ -1,0 +1,13 @@
+﻿.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.vscode/
+*.zip
+unittest_output.txt
+unittest_summary.txt
+results/experiments/
+results/repair_experiments/
+.git-old/

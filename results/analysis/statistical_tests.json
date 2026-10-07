@@ -1,0 +1,191 @@
+{
+    "design": {
+        "type": "paired task-level analysis with repeated-run aggregation",
+        "inferential_unit": "task_id within model",
+        "replication_unit": "run",
+        "conditions": [
+            "baseline",
+            "caps"
+        ],
+        "note": "Runs are summarized within task before inferential testing; models are analyzed separately."
+    },
+    "scipy_available": true,
+    "per_model": {
+        "claude-sonnet-5": {
+            "model": "claude-sonnet-5",
+            "task_pairs": 10,
+            "task_ids": [
+                "adapter_01",
+                "adapter_02",
+                "factory_01",
+                "factory_02",
+                "observer_01",
+                "observer_02",
+                "singleton_01",
+                "singleton_02",
+                "strategy_01",
+                "strategy_02"
+            ],
+            "wilcoxon": {
+                "interface_conformance": {
+                    "test": "Wilcoxon signed-rank",
+                    "metric": "interface_conformance",
+                    "null_hypothesis": "No difference in interface_conformance between baseline and CAPS",
+                    "sample_size": 10,
+                    "n_discordant": 10,
+                    "statistic": 0.0,
+                    "p_value": 0.001953125,
+                    "effect_size_r": 1.0,
+                    "direction": "CAPS > baseline",
+                    "limitation_note": null,
+                    "scipy_available": true,
+                    "mean_difference": 0.333886
+                },
+                "violation_count": {
+                    "test": "Wilcoxon signed-rank",
+                    "metric": "violation_count",
+                    "null_hypothesis": "No difference in violation_count between baseline and CAPS",
+                    "sample_size": 10,
+                    "n_discordant": 10,
+                    "statistic": 0.0,
+                    "p_value": 0.001953125,
+                    "effect_size_r": 1.0,
+                    "direction": "baseline > CAPS",
+                    "limitation_note": null,
+                    "scipy_available": true,
+                    "mean_difference": -6.866667
+                },
+                "functional_score": {
+                    "test": "Wilcoxon signed-rank",
+                    "metric": "functional_score",
+                    "null_hypothesis": "No difference in functional_score between baseline and CAPS",
+                    "sample_size": 10,
+                    "n_discordant": 8,
+                    "statistic": 0.0,
+                    "p_value": 0.0078125,
+                    "effect_size_r": 1.0,
+                    "direction": "CAPS > baseline",
+                    "limitation_note": null,
+                    "scipy_available": true,
+                    "mean_difference": 0.35119
+                },
+                "ast_valid": {
+                    "test": "Wilcoxon signed-rank",
+                    "metric": "ast_valid",
+                    "null_hypothesis": "No difference in ast_valid between baseline and CAPS",
+                    "sample_size": 10,
+                    "n_discordant": 0,
+                    "statistic": null,
+                    "p_value": null,
+                    "effect_size_r": null,
+                    "direction": "no difference",
+                    "limitation_note": "All differences are zero. Wilcoxon test cannot be computed.",
+                    "scipy_available": true,
+                    "mean_difference": 0.0
+                },
+                "functional_valid": {
+                    "test": "Wilcoxon signed-rank",
+                    "metric": "functional_valid",
+                    "null_hypothesis": "No difference in functional_valid between baseline and CAPS",
+                    "sample_size": 10,
+                    "n_discordant": 8,
+                    "statistic": 0.0,
+                    "p_value": 0.0078125,
+                    "effect_size_r": 1.0,
+                    "direction": "CAPS > baseline",
+                    "limitation_note": null,
+                    "scipy_available": true,
+                    "mean_difference": 0.6
+                }
+            }
+        },
+        "deepseek-v4.1-flash": {
+            "model": "deepseek-v4.1-flash",
+            "task_pairs": 10,
+            "task_ids": [
+                "adapter_01",
+                "adapter_02",
+                "factory_01",
+                "factory_02",
+                "observer_01",
+                "observer_02",
+                "singleton_01",
+                "singleton_02",
+                "strategy_01",
+                "strategy_02"
+            ],
+            "wilcoxon": {
+                "interface_conformance": {
+                    "test": "Wilcoxon signed-rank",
+                    "metric": "interface_conformance",
+                    "null_hypothesis": "No difference in interface_conformance between baseline and CAPS",
+                    "sample_size": 10,
+                    "n_discordant": 10,
+                    "statistic": 0.0,
+                    "p_value": 0.001953125,
+                    "effect_size_r": 1.0,
+                    "direction": "CAPS > baseline",
+                    "limitation_note": null,
+                    "scipy_available": true,
+                    "mean_difference": 0.272065
+                },
+                "violation_count": {
+                    "test": "Wilcoxon signed-rank",
+                    "metric": "violation_count",
+                    "null_hypothesis": "No difference in violation_count between baseline and CAPS",
+                    "sample_size": 10,
+                    "n_discordant": 10,
+                    "statistic": 0.0,
+                    "p_value": 0.001953125,
+                    "effect_size_r": 1.0,
+                    "direction": "baseline > CAPS",
+                    "limitation_note": null,
+                    "scipy_available": true,
+                    "mean_difference": -5.833333
+                },
+                "functional_score": {
+                    "test": "Wilcoxon signed-rank",
+                    "metric": "functional_score",
+                    "null_hypothesis": "No difference in functional_score between baseline and CAPS",
+                    "sample_size": 10,
+                    "n_discordant": 9,
+                    "statistic": 0.0,
+                    "p_value": 0.00390625,
+                    "effect_size_r": 1.0,
+                    "direction": "CAPS > baseline",
+                    "limitation_note": null,
+                    "scipy_available": true,
+                    "mean_difference": 0.627381
+                },
+                "ast_valid": {
+                    "test": "Wilcoxon signed-rank",
+                    "metric": "ast_valid",
+                    "null_hypothesis": "No difference in ast_valid between baseline and CAPS",
+                    "sample_size": 10,
+                    "n_discordant": 0,
+                    "statistic": null,
+                    "p_value": null,
+                    "effect_size_r": null,
+                    "direction": "no difference",
+                    "limitation_note": "All differences are zero. Wilcoxon test cannot be computed.",
+                    "scipy_available": true,
+                    "mean_difference": 0.0
+                },
+                "functional_valid": {
+                    "test": "Wilcoxon signed-rank",
+                    "metric": "functional_valid",
+                    "null_hypothesis": "No difference in functional_valid between baseline and CAPS",
+                    "sample_size": 10,
+                    "n_discordant": 9,
+                    "statistic": 0.0,
+                    "p_value": 0.00390625,
+                    "effect_size_r": 1.0,
+                    "direction": "CAPS > baseline",
+                    "limitation_note": null,
+                    "scipy_available": true,
+                    "mean_difference": 0.833333
+                }
+            }
+        }
+    }
+}

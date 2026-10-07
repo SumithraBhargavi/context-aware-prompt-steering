@@ -1,0 +1,723 @@
+[
+  {
+    "task_id": "factory_01",
+    "pattern": "Factory",
+    "description": "Implement a notification system using the Factory design pattern. The system should support EmailNotification and SMSNotification. A factory must create the appropriate notification object based on a string type.",
+    "contract": {
+      "classes": [
+        {
+          "name": "Notification",
+          "kind": "abstract"
+        },
+        {
+          "name": "EmailNotification",
+          "kind": "concrete",
+          "inherits": [
+            "Notification"
+          ]
+        },
+        {
+          "name": "SMSNotification",
+          "kind": "concrete",
+          "inherits": [
+            "Notification"
+          ]
+        },
+        {
+          "name": "NotificationFactory",
+          "kind": "concrete"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Notification",
+          "name": "send",
+          "parameters": [],
+          "return_type": "None",
+          "abstract": true
+        },
+        {
+          "class": "EmailNotification",
+          "name": "send",
+          "parameters": [],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "SMSNotification",
+          "name": "send",
+          "parameters": [],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "NotificationFactory",
+          "name": "create_notification",
+          "parameters": [
+            {
+              "name": "notification_type",
+              "type": "str"
+            }
+          ],
+          "return_type": "Notification",
+          "abstract": false,
+          "static": true
+        }
+      ]
+    }
+  },
+  {
+    "task_id": "factory_02",
+    "pattern": "Factory",
+    "description": "Create a document generation system using the Factory design pattern. The system must support PDFDocument and WordDocument objects. A factory should create the appropriate document based on a requested format.",
+    "contract": {
+      "classes": [
+        {
+          "name": "Document",
+          "kind": "abstract"
+        },
+        {
+          "name": "PDFDocument",
+          "kind": "concrete",
+          "inherits": [
+            "Document"
+          ]
+        },
+        {
+          "name": "WordDocument",
+          "kind": "concrete",
+          "inherits": [
+            "Document"
+          ]
+        },
+        {
+          "name": "DocumentFactory",
+          "kind": "concrete"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Document",
+          "name": "generate",
+          "parameters": [],
+          "return_type": "str",
+          "abstract": true
+        },
+        {
+          "class": "PDFDocument",
+          "name": "generate",
+          "parameters": [],
+          "return_type": "str",
+          "abstract": false
+        },
+        {
+          "class": "WordDocument",
+          "name": "generate",
+          "parameters": [],
+          "return_type": "str",
+          "abstract": false
+        },
+        {
+          "class": "DocumentFactory",
+          "name": "create_document",
+          "parameters": [
+            {
+              "name": "document_type",
+              "type": "str"
+            }
+          ],
+          "return_type": "Document",
+          "abstract": false,
+          "static": true
+        }
+      ]
+    }
+  },
+  {
+    "task_id": "observer_01",
+    "pattern": "Observer",
+    "description": "Implement a weather monitoring system using the Observer design pattern. Multiple observers should receive updates whenever the weather station changes its temperature.",
+    "contract": {
+      "classes": [
+        {
+          "name": "Observer",
+          "kind": "abstract"
+        },
+        {
+          "name": "WeatherStation",
+          "kind": "concrete"
+        },
+        {
+          "name": "PhoneDisplay",
+          "kind": "concrete",
+          "inherits": [
+            "Observer"
+          ]
+        },
+        {
+          "name": "WebDisplay",
+          "kind": "concrete",
+          "inherits": [
+            "Observer"
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "class": "Observer",
+          "name": "update",
+          "parameters": [
+            {
+              "name": "temperature",
+              "type": "float"
+            }
+          ],
+          "return_type": "None",
+          "abstract": true
+        },
+        {
+          "class": "WeatherStation",
+          "name": "attach",
+          "parameters": [
+            {
+              "name": "observer",
+              "type": "Observer"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "WeatherStation",
+          "name": "detach",
+          "parameters": [
+            {
+              "name": "observer",
+              "type": "Observer"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "WeatherStation",
+          "name": "set_temperature",
+          "parameters": [
+            {
+              "name": "temperature",
+              "type": "float"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "PhoneDisplay",
+          "name": "update",
+          "parameters": [
+            {
+              "name": "temperature",
+              "type": "float"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "WebDisplay",
+          "name": "update",
+          "parameters": [
+            {
+              "name": "temperature",
+              "type": "float"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        }
+      ]
+    }
+  },
+  {
+    "task_id": "observer_02",
+    "pattern": "Observer",
+    "description": "Implement a stock price notification system using the Observer design pattern. Multiple investors should be notified when the price of a stock changes.",
+    "contract": {
+      "classes": [
+        {
+          "name": "Investor",
+          "kind": "abstract"
+        },
+        {
+          "name": "Stock",
+          "kind": "concrete"
+        },
+        {
+          "name": "MobileInvestor",
+          "kind": "concrete",
+          "inherits": [
+            "Investor"
+          ]
+        },
+        {
+          "name": "EmailInvestor",
+          "kind": "concrete",
+          "inherits": [
+            "Investor"
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "class": "Investor",
+          "name": "update",
+          "parameters": [
+            {
+              "name": "price",
+              "type": "float"
+            }
+          ],
+          "return_type": "None",
+          "abstract": true
+        },
+        {
+          "class": "Stock",
+          "name": "subscribe",
+          "parameters": [
+            {
+              "name": "investor",
+              "type": "Investor"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "Stock",
+          "name": "unsubscribe",
+          "parameters": [
+            {
+              "name": "investor",
+              "type": "Investor"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "Stock",
+          "name": "set_price",
+          "parameters": [
+            {
+              "name": "price",
+              "type": "float"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "MobileInvestor",
+          "name": "update",
+          "parameters": [
+            {
+              "name": "price",
+              "type": "float"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "EmailInvestor",
+          "name": "update",
+          "parameters": [
+            {
+              "name": "price",
+              "type": "float"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        }
+      ]
+    }
+  },
+  {
+    "task_id": "strategy_01",
+    "pattern": "Strategy",
+    "description": "Implement a payment system using the Strategy design pattern. The system must support credit card and UPI payment strategies.",
+    "contract": {
+      "classes": [
+        {
+          "name": "PaymentStrategy",
+          "kind": "abstract"
+        },
+        {
+          "name": "CreditCardPayment",
+          "kind": "concrete",
+          "inherits": [
+            "PaymentStrategy"
+          ]
+        },
+        {
+          "name": "UPIPayment",
+          "kind": "concrete",
+          "inherits": [
+            "PaymentStrategy"
+          ]
+        },
+        {
+          "name": "PaymentProcessor",
+          "kind": "concrete"
+        }
+      ],
+      "methods": [
+        {
+          "class": "PaymentStrategy",
+          "name": "pay",
+          "parameters": [
+            {
+              "name": "amount",
+              "type": "float"
+            }
+          ],
+          "return_type": "bool",
+          "abstract": true
+        },
+        {
+          "class": "CreditCardPayment",
+          "name": "pay",
+          "parameters": [
+            {
+              "name": "amount",
+              "type": "float"
+            }
+          ],
+          "return_type": "bool",
+          "abstract": false
+        },
+        {
+          "class": "UPIPayment",
+          "name": "pay",
+          "parameters": [
+            {
+              "name": "amount",
+              "type": "float"
+            }
+          ],
+          "return_type": "bool",
+          "abstract": false
+        },
+        {
+          "class": "PaymentProcessor",
+          "name": "set_strategy",
+          "parameters": [
+            {
+              "name": "strategy",
+              "type": "PaymentStrategy"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "PaymentProcessor",
+          "name": "process_payment",
+          "parameters": [
+            {
+              "name": "amount",
+              "type": "float"
+            }
+          ],
+          "return_type": "bool",
+          "abstract": false
+        }
+      ]
+    }
+  },
+  {
+    "task_id": "strategy_02",
+    "pattern": "Strategy",
+    "description": "Implement a text compression system using the Strategy design pattern. The system must support ZIP and RLE compression strategies.",
+    "contract": {
+      "classes": [
+        {
+          "name": "CompressionStrategy",
+          "kind": "abstract"
+        },
+        {
+          "name": "ZipCompression",
+          "kind": "concrete",
+          "inherits": [
+            "CompressionStrategy"
+          ]
+        },
+        {
+          "name": "RLECompression",
+          "kind": "concrete",
+          "inherits": [
+            "CompressionStrategy"
+          ]
+        },
+        {
+          "name": "CompressionContext",
+          "kind": "concrete"
+        }
+      ],
+      "methods": [
+        {
+          "class": "CompressionStrategy",
+          "name": "compress",
+          "parameters": [
+            {
+              "name": "data",
+              "type": "str"
+            }
+          ],
+          "return_type": "str",
+          "abstract": true
+        },
+        {
+          "class": "ZipCompression",
+          "name": "compress",
+          "parameters": [
+            {
+              "name": "data",
+              "type": "str"
+            }
+          ],
+          "return_type": "str",
+          "abstract": false
+        },
+        {
+          "class": "RLECompression",
+          "name": "compress",
+          "parameters": [
+            {
+              "name": "data",
+              "type": "str"
+            }
+          ],
+          "return_type": "str",
+          "abstract": false
+        },
+        {
+          "class": "CompressionContext",
+          "name": "set_strategy",
+          "parameters": [
+            {
+              "name": "strategy",
+              "type": "CompressionStrategy"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "CompressionContext",
+          "name": "compress_data",
+          "parameters": [
+            {
+              "name": "data",
+              "type": "str"
+            }
+          ],
+          "return_type": "str",
+          "abstract": false
+        }
+      ]
+    }
+  },
+  {
+    "task_id": "singleton_01",
+    "pattern": "Singleton",
+    "description": "Implement a configuration manager using the Singleton design pattern. Only one ConfigurationManager instance should exist throughout the application.",
+    "contract": {
+      "classes": [
+        {
+          "name": "ConfigurationManager",
+          "kind": "concrete"
+        }
+      ],
+      "methods": [
+        {
+          "class": "ConfigurationManager",
+          "name": "get_instance",
+          "parameters": [],
+          "return_type": "ConfigurationManager",
+          "abstract": false,
+          "static": true
+        }
+      ]
+    }
+  },
+  {
+    "task_id": "singleton_02",
+    "pattern": "Singleton",
+    "description": "Implement a logging manager using the Singleton design pattern. Every part of the application must use the same Logger instance.",
+    "contract": {
+      "classes": [
+        {
+          "name": "Logger",
+          "kind": "concrete"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Logger",
+          "name": "get_instance",
+          "parameters": [],
+          "return_type": "Logger",
+          "abstract": false,
+          "static": true
+        },
+        {
+          "class": "Logger",
+          "name": "log",
+          "parameters": [
+            {
+              "name": "message",
+              "type": "str"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        }
+      ]
+    }
+  },
+  {
+    "task_id": "adapter_01",
+    "pattern": "Adapter",
+    "description": "Implement an Adapter pattern for a legacy payment gateway. The application expects a PaymentProcessor interface, while the legacy gateway exposes a process_payment method with a different interface. PaymentAdapter should wrap a LegacyPaymentGateway instance supplied to its constructor.",
+    "contract": {
+      "classes": [
+        {
+          "name": "PaymentProcessor",
+          "kind": "abstract"
+        },
+        {
+          "name": "LegacyPaymentGateway",
+          "kind": "concrete"
+        },
+        {
+          "name": "PaymentAdapter",
+          "kind": "concrete",
+          "inherits": [
+            "PaymentProcessor"
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "class": "PaymentProcessor",
+          "name": "pay",
+          "parameters": [
+            {
+              "name": "amount",
+              "type": "float"
+            }
+          ],
+          "return_type": "bool",
+          "abstract": true
+        },
+        {
+          "class": "LegacyPaymentGateway",
+          "name": "process_payment",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "float"
+            }
+          ],
+          "return_type": "bool",
+          "abstract": false
+        },
+        {
+          "class": "PaymentAdapter",
+          "name": "__init__",
+          "parameters": [
+            {
+              "name": "gateway",
+              "type": "LegacyPaymentGateway"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "PaymentAdapter",
+          "name": "pay",
+          "parameters": [
+            {
+              "name": "amount",
+              "type": "float"
+            }
+          ],
+          "return_type": "bool",
+          "abstract": false
+        }
+      ]
+    }
+  },
+  {
+    "task_id": "adapter_02",
+    "pattern": "Adapter",
+    "description": "Implement an Adapter pattern that allows a modern application to use a legacy temperature sensor. The application expects Celsius readings while the legacy sensor provides Fahrenheit readings. TemperatureAdapter should wrap a LegacyTemperatureSensor instance supplied to its constructor.",
+    "contract": {
+      "classes": [
+        {
+          "name": "TemperatureSensor",
+          "kind": "abstract"
+        },
+        {
+          "name": "LegacyTemperatureSensor",
+          "kind": "concrete"
+        },
+        {
+          "name": "TemperatureAdapter",
+          "kind": "concrete",
+          "inherits": [
+            "TemperatureSensor"
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "class": "TemperatureSensor",
+          "name": "get_temperature",
+          "parameters": [],
+          "return_type": "float",
+          "abstract": true
+        },
+        {
+          "class": "LegacyTemperatureSensor",
+          "name": "get_fahrenheit",
+          "parameters": [],
+          "return_type": "float",
+          "abstract": false
+        },
+        {
+          "class": "TemperatureAdapter",
+          "name": "__init__",
+          "parameters": [
+            {
+              "name": "sensor",
+              "type": "LegacyTemperatureSensor"
+            }
+          ],
+          "return_type": "None",
+          "abstract": false
+        },
+        {
+          "class": "TemperatureAdapter",
+          "name": "get_temperature",
+          "parameters": [],
+          "return_type": "float",
+          "abstract": false
+        }
+      ]
+    }
+  }
+]

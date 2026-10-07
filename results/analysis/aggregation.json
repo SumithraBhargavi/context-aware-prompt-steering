@@ -1,0 +1,1093 @@
+{
+    "total_records": 120,
+    "overall": {
+        "n": 120,
+        "interface_conformance": {
+            "n": 120,
+            "mean": 0.8401787981307868,
+            "median": 0.9252136752136753,
+            "stdev": 0.1793585259208633,
+            "min": 0.4444444444444444,
+            "max": 1.0
+        },
+        "violation_count": {
+            "n": 120,
+            "mean": 3.225,
+            "median": 1.0,
+            "stdev": 3.9031607532288777,
+            "min": 0,
+            "max": 14
+        },
+        "functional_score": {
+            "n": 120,
+            "mean": 0.7053571428571429,
+            "median": 1.0,
+            "stdev": 0.39681380868767707,
+            "min": 0.0,
+            "max": 1.0
+        },
+        "functional_tests_passed": {
+            "n": 120,
+            "mean": 4.2,
+            "median": 4.0,
+            "stdev": 2.5091429451762473,
+            "min": 0,
+            "max": 7
+        },
+        "ast_valid": {
+            "n": 120,
+            "count_true": 120,
+            "proportion_true": 1.0
+        },
+        "functional_valid": {
+            "n": 120,
+            "count_true": 71,
+            "proportion_true": 0.5916666666666667
+        }
+    },
+    "by_condition": {
+        "baseline": {
+            "n": 60,
+            "interface_conformance": {
+                "n": 60,
+                "mean": 0.688690929594907,
+                "median": 0.6923076923076923,
+                "stdev": 0.12987429602739967,
+                "min": 0.4444444444444444,
+                "max": 0.9615384615384616
+            },
+            "violation_count": {
+                "n": 60,
+                "mean": 6.4,
+                "median": 6.0,
+                "stdev": 3.190026831617671,
+                "min": 1,
+                "max": 14
+            },
+            "functional_score": {
+                "n": 60,
+                "mean": 0.4607142857142857,
+                "median": 0.42857142857142855,
+                "stdev": 0.3841315838055085,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 60,
+                "mean": 2.75,
+                "median": 3.0,
+                "stdev": 2.2671194296892647,
+                "min": 0,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 60,
+                "count_true": 60,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 60,
+                "count_true": 14,
+                "proportion_true": 0.23333333333333334
+            }
+        },
+        "caps": {
+            "n": 60,
+            "interface_conformance": {
+                "n": 60,
+                "mean": 0.9916666666666667,
+                "median": 1.0,
+                "stdev": 0.03663069627518045,
+                "min": 0.8333333333333334,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 60,
+                "mean": 0.05,
+                "median": 0.0,
+                "stdev": 0.21978417765108277,
+                "min": 0,
+                "max": 1
+            },
+            "functional_score": {
+                "n": 60,
+                "mean": 0.95,
+                "median": 1.0,
+                "stdev": 0.21978417765108277,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 60,
+                "mean": 5.65,
+                "median": 6.0,
+                "stdev": 1.8116852347553392,
+                "min": 0,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 60,
+                "count_true": 60,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 60,
+                "count_true": 57,
+                "proportion_true": 0.95
+            }
+        }
+    },
+    "by_pattern": {
+        "Adapter": {
+            "n": 24,
+            "interface_conformance": {
+                "n": 24,
+                "mean": 0.811698717948718,
+                "median": 0.9038461538461539,
+                "stdev": 0.20451109532582426,
+                "min": 0.5333333333333333,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 24,
+                "mean": 3.75,
+                "median": 2.5,
+                "stdev": 4.035171458024079,
+                "min": 0,
+                "max": 11
+            },
+            "functional_score": {
+                "n": 24,
+                "mean": 0.7380952380952381,
+                "median": 0.7857142857142857,
+                "stdev": 0.2694654956705867,
+                "min": 0.42857142857142855,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 24,
+                "mean": 4.791666666666667,
+                "median": 5.0,
+                "stdev": 1.793203755891931,
+                "min": 3,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 24,
+                "count_true": 24,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 24,
+                "count_true": 12,
+                "proportion_true": 0.5
+            }
+        },
+        "Factory": {
+            "n": 24,
+            "interface_conformance": {
+                "n": 24,
+                "mean": 0.8884109311740891,
+                "median": 0.9807692307692308,
+                "stdev": 0.139649085114431,
+                "min": 0.6842105263157895,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 24,
+                "mean": 2.625,
+                "median": 0.5,
+                "stdev": 3.2679271451620453,
+                "min": 0,
+                "max": 8
+            },
+            "functional_score": {
+                "n": 24,
+                "mean": 0.9047619047619048,
+                "median": 1.0,
+                "stdev": 0.13758383209802194,
+                "min": 0.7142857142857143,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 24,
+                "mean": 6.333333333333333,
+                "median": 7.0,
+                "stdev": 0.9630868246861536,
+                "min": 5,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 24,
+                "count_true": 24,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 24,
+                "count_true": 16,
+                "proportion_true": 0.6666666666666666
+            }
+        },
+        "Observer": {
+            "n": 24,
+            "interface_conformance": {
+                "n": 24,
+                "mean": 0.8395946920602276,
+                "median": 0.8695652173913043,
+                "stdev": 0.1668731304776861,
+                "min": 0.6086956521739131,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 24,
+                "mean": 5.041666666666667,
+                "median": 3.0,
+                "stdev": 5.401120388333828,
+                "min": 0,
+                "max": 14
+            },
+            "functional_score": {
+                "n": 24,
+                "mean": 0.6041666666666666,
+                "median": 1.0,
+                "stdev": 0.4829521235310892,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 24,
+                "mean": 2.4166666666666665,
+                "median": 4.0,
+                "stdev": 1.9318084941243567,
+                "min": 0,
+                "max": 4
+            },
+            "ast_valid": {
+                "n": 24,
+                "count_true": 24,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 24,
+                "count_true": 14,
+                "proportion_true": 0.5833333333333334
+            }
+        },
+        "Singleton": {
+            "n": 24,
+            "interface_conformance": {
+                "n": 24,
+                "mean": 0.7534722222222222,
+                "median": 0.75,
+                "stdev": 0.22508161876232785,
+                "min": 0.4444444444444444,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 24,
+                "mean": 1.625,
+                "median": 1.0,
+                "stdev": 1.7646898976258147,
+                "min": 0,
+                "max": 5
+            },
+            "functional_score": {
+                "n": 24,
+                "mean": 0.75,
+                "median": 1.0,
+                "stdev": 0.4423258684646914,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 24,
+                "mean": 3.75,
+                "median": 4.0,
+                "stdev": 2.381997700141262,
+                "min": 0,
+                "max": 6
+            },
+            "ast_valid": {
+                "n": 24,
+                "count_true": 24,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 24,
+                "count_true": 18,
+                "proportion_true": 0.75
+            }
+        },
+        "Strategy": {
+            "n": 24,
+            "interface_conformance": {
+                "n": 24,
+                "mean": 0.9077174272486772,
+                "median": 0.9444444444444444,
+                "stdev": 0.10357679107521933,
+                "min": 0.7222222222222222,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 24,
+                "mean": 3.0833333333333335,
+                "median": 2.0,
+                "stdev": 3.574263884891626,
+                "min": 0,
+                "max": 10
+            },
+            "functional_score": {
+                "n": 24,
+                "mean": 0.5297619047619048,
+                "median": 0.2857142857142857,
+                "stdev": 0.4546499705067086,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 24,
+                "mean": 3.7083333333333335,
+                "median": 2.0,
+                "stdev": 3.18254979354696,
+                "min": 0,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 24,
+                "count_true": 24,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 24,
+                "count_true": 11,
+                "proportion_true": 0.4583333333333333
+            }
+        }
+    },
+    "by_model": {
+        "claude-sonnet-5": {
+            "n": 60,
+            "interface_conformance": {
+                "n": 60,
+                "mean": 0.8219457196536692,
+                "median": 0.875,
+                "stdev": 0.19714012590014252,
+                "min": 0.4444444444444444,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 60,
+                "mean": 3.5,
+                "median": 1.0,
+                "stdev": 4.102500271124461,
+                "min": 0,
+                "max": 14
+            },
+            "functional_score": {
+                "n": 60,
+                "mean": 0.7244047619047619,
+                "median": 1.0,
+                "stdev": 0.383421333749766,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 60,
+                "mean": 4.283333333333333,
+                "median": 4.0,
+                "stdev": 2.408260267106588,
+                "min": 0,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 60,
+                "count_true": 60,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 60,
+                "count_true": 36,
+                "proportion_true": 0.6
+            }
+        },
+        "deepseek-v4.1-flash": {
+            "n": 60,
+            "interface_conformance": {
+                "n": 60,
+                "mean": 0.8584118766079043,
+                "median": 0.9615384615384616,
+                "stdev": 0.15919741898056014,
+                "min": 0.5,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 60,
+                "mean": 2.95,
+                "median": 1.0,
+                "stdev": 3.707184961528498,
+                "min": 0,
+                "max": 12
+            },
+            "functional_score": {
+                "n": 60,
+                "mean": 0.6863095238095238,
+                "median": 1.0,
+                "stdev": 0.41211817473366646,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 60,
+                "mean": 4.116666666666666,
+                "median": 4.0,
+                "stdev": 2.6238260759501872,
+                "min": 0,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 60,
+                "count_true": 60,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 60,
+                "count_true": 35,
+                "proportion_true": 0.5833333333333334
+            }
+        }
+    },
+    "by_pattern_condition": {
+        "Adapter__baseline": {
+            "n": 12,
+            "interface_conformance": {
+                "n": 12,
+                "mean": 0.6233974358974359,
+                "median": 0.5884615384615384,
+                "stdev": 0.10045043048449198,
+                "min": 0.5333333333333333,
+                "max": 0.8076923076923077
+            },
+            "violation_count": {
+                "n": 12,
+                "mean": 7.5,
+                "median": 7.0,
+                "stdev": 1.834021909257456,
+                "min": 5,
+                "max": 11
+            },
+            "functional_score": {
+                "n": 12,
+                "mean": 0.47619047619047616,
+                "median": 0.5,
+                "stdev": 0.04652421051992355,
+                "min": 0.42857142857142855,
+                "max": 0.5714285714285714
+            },
+            "functional_tests_passed": {
+                "n": 12,
+                "mean": 3.0833333333333335,
+                "median": 3.0,
+                "stdev": 0.28867513459481287,
+                "min": 3,
+                "max": 4
+            },
+            "ast_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 12,
+                "count_true": 0,
+                "proportion_true": 0.0
+            }
+        },
+        "Adapter__caps": {
+            "n": 12,
+            "interface_conformance": {
+                "n": 12,
+                "mean": 1.0,
+                "median": 1.0,
+                "stdev": 0.0,
+                "min": 1.0,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 12,
+                "mean": 0,
+                "median": 0.0,
+                "stdev": 0.0,
+                "min": 0,
+                "max": 0
+            },
+            "functional_score": {
+                "n": 12,
+                "mean": 1.0,
+                "median": 1.0,
+                "stdev": 0.0,
+                "min": 1.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 12,
+                "mean": 6.5,
+                "median": 6.5,
+                "stdev": 0.5222329678670935,
+                "min": 6,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            }
+        },
+        "Factory__baseline": {
+            "n": 12,
+            "interface_conformance": {
+                "n": 12,
+                "mean": 0.7768218623481782,
+                "median": 0.7307692307692308,
+                "stdev": 0.11665491207809603,
+                "min": 0.6842105263157895,
+                "max": 0.9615384615384616
+            },
+            "violation_count": {
+                "n": 12,
+                "mean": 5.25,
+                "median": 6.0,
+                "stdev": 2.70100991213556,
+                "min": 1,
+                "max": 8
+            },
+            "functional_score": {
+                "n": 12,
+                "mean": 0.8095238095238095,
+                "median": 0.7142857142857143,
+                "stdev": 0.14067598969066597,
+                "min": 0.7142857142857143,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 12,
+                "mean": 5.666666666666667,
+                "median": 5.0,
+                "stdev": 0.9847319278346619,
+                "min": 5,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 12,
+                "count_true": 4,
+                "proportion_true": 0.3333333333333333
+            }
+        },
+        "Factory__caps": {
+            "n": 12,
+            "interface_conformance": {
+                "n": 12,
+                "mean": 1.0,
+                "median": 1.0,
+                "stdev": 0.0,
+                "min": 1.0,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 12,
+                "mean": 0,
+                "median": 0.0,
+                "stdev": 0.0,
+                "min": 0,
+                "max": 0
+            },
+            "functional_score": {
+                "n": 12,
+                "mean": 1.0,
+                "median": 1.0,
+                "stdev": 0.0,
+                "min": 1.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 12,
+                "mean": 7,
+                "median": 7.0,
+                "stdev": 0.0,
+                "min": 7,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            }
+        },
+        "Observer__baseline": {
+            "n": 12,
+            "interface_conformance": {
+                "n": 12,
+                "mean": 0.6791893841204552,
+                "median": 0.696969696969697,
+                "stdev": 0.04568275084123742,
+                "min": 0.6086956521739131,
+                "max": 0.7391304347826086
+            },
+            "violation_count": {
+                "n": 12,
+                "mean": 10.083333333333334,
+                "median": 10.0,
+                "stdev": 2.3532698077098573,
+                "min": 6,
+                "max": 14
+            },
+            "functional_score": {
+                "n": 12,
+                "mean": 0.375,
+                "median": 0.125,
+                "stdev": 0.4707344358456359,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 12,
+                "mean": 1.5,
+                "median": 0.5,
+                "stdev": 1.8829377433825436,
+                "min": 0,
+                "max": 4
+            },
+            "ast_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 12,
+                "count_true": 4,
+                "proportion_true": 0.3333333333333333
+            }
+        },
+        "Observer__caps": {
+            "n": 12,
+            "interface_conformance": {
+                "n": 12,
+                "mean": 1.0,
+                "median": 1.0,
+                "stdev": 0.0,
+                "min": 1.0,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 12,
+                "mean": 0,
+                "median": 0.0,
+                "stdev": 0.0,
+                "min": 0,
+                "max": 0
+            },
+            "functional_score": {
+                "n": 12,
+                "mean": 0.8333333333333334,
+                "median": 1.0,
+                "stdev": 0.3892494720807615,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 12,
+                "mean": 3.3333333333333335,
+                "median": 4.0,
+                "stdev": 1.556997888323046,
+                "min": 0,
+                "max": 4
+            },
+            "ast_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 12,
+                "count_true": 10,
+                "proportion_true": 0.8333333333333334
+            }
+        },
+        "Singleton__baseline": {
+            "n": 12,
+            "interface_conformance": {
+                "n": 12,
+                "mean": 0.548611111111111,
+                "median": 0.5,
+                "stdev": 0.09316949906249124,
+                "min": 0.4444444444444444,
+                "max": 0.6666666666666666
+            },
+            "violation_count": {
+                "n": 12,
+                "mean": 3,
+                "median": 3.0,
+                "stdev": 1.4770978917519928,
+                "min": 1,
+                "max": 5
+            },
+            "functional_score": {
+                "n": 12,
+                "mean": 0.5,
+                "median": 0.5,
+                "stdev": 0.5222329678670935,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 12,
+                "mean": 2.5,
+                "median": 2.0,
+                "stdev": 2.7136021011998728,
+                "min": 0,
+                "max": 6
+            },
+            "ast_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 12,
+                "count_true": 6,
+                "proportion_true": 0.5
+            }
+        },
+        "Singleton__caps": {
+            "n": 12,
+            "interface_conformance": {
+                "n": 12,
+                "mean": 0.9583333333333334,
+                "median": 1.0,
+                "stdev": 0.0753778361444409,
+                "min": 0.8333333333333334,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 12,
+                "mean": 0.25,
+                "median": 0.0,
+                "stdev": 0.45226701686664544,
+                "min": 0,
+                "max": 1
+            },
+            "functional_score": {
+                "n": 12,
+                "mean": 1.0,
+                "median": 1.0,
+                "stdev": 0.0,
+                "min": 1.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 12,
+                "mean": 5,
+                "median": 5.0,
+                "stdev": 1.044465935734187,
+                "min": 4,
+                "max": 6
+            },
+            "ast_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            }
+        },
+        "Strategy__baseline": {
+            "n": 12,
+            "interface_conformance": {
+                "n": 12,
+                "mean": 0.8154348544973545,
+                "median": 0.8214285714285714,
+                "stdev": 0.06205696088026001,
+                "min": 0.7222222222222222,
+                "max": 0.8888888888888888
+            },
+            "violation_count": {
+                "n": 12,
+                "mean": 6.166666666666667,
+                "median": 5.0,
+                "stdev": 2.443296332763787,
+                "min": 4,
+                "max": 10
+            },
+            "functional_score": {
+                "n": 12,
+                "mean": 0.14285714285714285,
+                "median": 0.14285714285714285,
+                "stdev": 0.14920941939059815,
+                "min": 0.0,
+                "max": 0.2857142857142857
+            },
+            "functional_tests_passed": {
+                "n": 12,
+                "mean": 1,
+                "median": 1.0,
+                "stdev": 1.044465935734187,
+                "min": 0,
+                "max": 2
+            },
+            "ast_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 12,
+                "count_true": 0,
+                "proportion_true": 0.0
+            }
+        },
+        "Strategy__caps": {
+            "n": 12,
+            "interface_conformance": {
+                "n": 12,
+                "mean": 1.0,
+                "median": 1.0,
+                "stdev": 0.0,
+                "min": 1.0,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 12,
+                "mean": 0,
+                "median": 0.0,
+                "stdev": 0.0,
+                "min": 0,
+                "max": 0
+            },
+            "functional_score": {
+                "n": 12,
+                "mean": 0.9166666666666666,
+                "median": 1.0,
+                "stdev": 0.28867513459481287,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 12,
+                "mean": 6.416666666666667,
+                "median": 7.0,
+                "stdev": 2.0207259421636903,
+                "min": 0,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 12,
+                "count_true": 12,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 12,
+                "count_true": 11,
+                "proportion_true": 0.9166666666666666
+            }
+        }
+    },
+    "by_model_condition": {
+        "claude-sonnet-5__baseline": {
+            "n": 30,
+            "interface_conformance": {
+                "n": 30,
+                "mean": 0.6550025504184497,
+                "median": 0.6626016260162602,
+                "stdev": 0.14006603960222574,
+                "min": 0.4444444444444444,
+                "max": 0.9615384615384616
+            },
+            "violation_count": {
+                "n": 30,
+                "mean": 6.933333333333334,
+                "median": 6.5,
+                "stdev": 3.128658777675577,
+                "min": 1,
+                "max": 14
+            },
+            "functional_score": {
+                "n": 30,
+                "mean": 0.5488095238095239,
+                "median": 0.5,
+                "stdev": 0.3770887562579616,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 30,
+                "mean": 3.1666666666666665,
+                "median": 3.0,
+                "stdev": 2.102270256148114,
+                "min": 0,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 30,
+                "count_true": 30,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 30,
+                "count_true": 9,
+                "proportion_true": 0.3
+            }
+        },
+        "claude-sonnet-5__caps": {
+            "n": 30,
+            "interface_conformance": {
+                "n": 30,
+                "mean": 0.9888888888888889,
+                "median": 1.0,
+                "stdev": 0.042284688617077064,
+                "min": 0.8333333333333334,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 30,
+                "mean": 0.06666666666666667,
+                "median": 0.0,
+                "stdev": 0.2537081317024624,
+                "min": 0,
+                "max": 1
+            },
+            "functional_score": {
+                "n": 30,
+                "mean": 0.9,
+                "median": 1.0,
+                "stdev": 0.30512857662936466,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 30,
+                "mean": 5.4,
+                "median": 6.0,
+                "stdev": 2.1908902300206643,
+                "min": 0,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 30,
+                "count_true": 30,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 30,
+                "count_true": 27,
+                "proportion_true": 0.9
+            }
+        },
+        "deepseek-v4.1-flash__baseline": {
+            "n": 30,
+            "interface_conformance": {
+                "n": 30,
+                "mean": 0.7223793087713642,
+                "median": 0.7306763285024154,
+                "stdev": 0.111129289694206,
+                "min": 0.5,
+                "max": 0.9615384615384616
+            },
+            "violation_count": {
+                "n": 30,
+                "mean": 5.866666666666666,
+                "median": 6.0,
+                "stdev": 3.213477365971199,
+                "min": 1,
+                "max": 12
+            },
+            "functional_score": {
+                "n": 30,
+                "mean": 0.3726190476190476,
+                "median": 0.2857142857142857,
+                "stdev": 0.3767620265863549,
+                "min": 0.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 30,
+                "mean": 2.3333333333333335,
+                "median": 2.0,
+                "stdev": 2.3828891958167566,
+                "min": 0,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 30,
+                "count_true": 30,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 30,
+                "count_true": 5,
+                "proportion_true": 0.16666666666666666
+            }
+        },
+        "deepseek-v4.1-flash__caps": {
+            "n": 30,
+            "interface_conformance": {
+                "n": 30,
+                "mean": 0.9944444444444445,
+                "median": 1.0,
+                "stdev": 0.03042903097250922,
+                "min": 0.8333333333333334,
+                "max": 1.0
+            },
+            "violation_count": {
+                "n": 30,
+                "mean": 0.03333333333333333,
+                "median": 0.0,
+                "stdev": 0.18257418583505536,
+                "min": 0,
+                "max": 1
+            },
+            "functional_score": {
+                "n": 30,
+                "mean": 1.0,
+                "median": 1.0,
+                "stdev": 0.0,
+                "min": 1.0,
+                "max": 1.0
+            },
+            "functional_tests_passed": {
+                "n": 30,
+                "mean": 5.9,
+                "median": 6.5,
+                "stdev": 1.3222238320605801,
+                "min": 4,
+                "max": 7
+            },
+            "ast_valid": {
+                "n": 30,
+                "count_true": 30,
+                "proportion_true": 1.0
+            },
+            "functional_valid": {
+                "n": 30,
+                "count_true": 30,
+                "proportion_true": 1.0
+            }
+        }
+    }
+}

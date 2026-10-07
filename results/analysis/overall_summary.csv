@@ -1,0 +1,3 @@
+condition,n_runs,ast_valid_rate,interface_conformance_mean,interface_conformance_median,violation_count_mean,functional_valid_rate,functional_score_mean,SS_FP,SS_FF,SN_FP,SN_FF
+baseline,60,1.0000,0.6887,0.6923,6.4000,0.2333,0.4607,3,8,11,38
+caps,60,1.0000,0.9917,1.0000,0.0500,0.9500,0.9500,57,3,0,0
